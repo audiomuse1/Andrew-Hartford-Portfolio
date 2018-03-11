@@ -1,0 +1,12 @@
+.table-responsive {
+    border: 1px solid black;
+    width: 1000px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+  }
+
+.table th {
+    width: auto !important;
+}
