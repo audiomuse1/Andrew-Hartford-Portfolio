@@ -1,6 +1,5 @@
 .table-responsive {
     border: 1px solid black;
-    width: 1000px;
     border-radius: 5px;
     width: 50%;
     margin: 0px auto;
@@ -9,4 +8,11 @@
 
 .table th {
     width: auto !important;
+}
+
+.mat {
+    color: red;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding-right: 80px;
 }

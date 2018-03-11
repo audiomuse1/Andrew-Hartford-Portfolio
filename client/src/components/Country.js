@@ -24,22 +24,22 @@ class Country extends Component {
                 <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Chemical Name</th>
-                    <th scope="col">Chemical Formula</th>
-                    <th scope="col">CAS Number</th>
-                    <th scope="col">Product ID</th>
-                    <th scope="col">Price</th>
+                    <th className="mat" scope="col">#</th>
+                    <th className="mat" scope="col">Chemical Name</th>
+                    <th className="mat" scope="col">Chemical Formula</th>
+                    <th className="mat" scope="col">CAS Number</th>
+                    <th className="mat" scope="col">Product ID</th>
+                    <th className="mat" scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <th scope="row">1</th>
-                    <td>{this.props.country.continent}</td>
-                    <td>{this.props.country.capital}</td>
-                    <td>{this.props.country.leader}</td>
-                    <td>{this.props.country.population}</td>
-                    <td>{this.props.country.currency}</td>
+                    <th className="mat" scope="row">1</th>
+                    <td className="mat">{this.props.country.continent}</td>
+                    <td className="mat">{this.props.country.capital}</td>
+                    <td className="mat">{this.props.country.leader}</td>
+                    <td className="mat">{this.props.country.population}</td>
+                    <td className="mat">{this.props.country.currency}</td>
                     </tr>
                 </tbody>
                 </table>
