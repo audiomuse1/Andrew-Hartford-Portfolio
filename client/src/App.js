@@ -18,12 +18,20 @@ class App extends Component {
     return (
       <div>
 
+
+
         <BrowserRouter>
           <div>
-          
+            <nav>
+              <ul>
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/addCountry"}>Add Chemical</Link></li>
+                <li><Link to={"/countries"}>List of Chemicals</Link></li>
+              </ul>
+            </nav>
             <Switch>
              <Route path="/countries/:id" component={CountryContainer} />
-              <Route path="/countries" component={Main} />
+              <Route path="/countries" component={CountriesContainer} />
               <Route path="/addCountry" component={CreateCountriesContainer} />
               <Route path="/" component={Main} />
             </Switch>
