@@ -15,6 +15,7 @@ h1 {
 
 .page-header {
     height: 170px;
+    margin-top: 100px;
     position: relative;
     background-color: aquamarine;
 }
@@ -23,8 +24,10 @@ h1 {
     display:block;
     margin: 0px auto;
     height: 200px;
-    margin-top: -70px;
+    margin-top: -100px;
 }
 
-
+.navvy {
+    margin-bottom: 30px;
+}
 

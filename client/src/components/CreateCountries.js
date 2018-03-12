@@ -1,4 +1,5 @@
 import React from "react";
+import './CreateCountries.css';
 
 class CreateCountries extends React.Component {
     constructor() {
@@ -17,8 +18,8 @@ class CreateCountries extends React.Component {
     render() {
         return (
             <div>
-                <div>
-                    <h2>Chemical</h2>
+                <div class="form">
+                    <h2 id="title">Enter Chemical Below:</h2>
                     <form onSubmit={(e) => {
                         e.preventDefault();
                         if (this.props.addCountry) {
@@ -26,7 +27,7 @@ class CreateCountries extends React.Component {
                         }
                     }}>
                     <div>
-                    Chemical Name: <input onChange={(e) => {
+                   <input placeholder="Chemical Name" onChange={(e) => {
                             const country = {continent: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -34,7 +35,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                    Chemical Formula: <input onChange={(e) => {
+                    <input placeholder="Chemical Formula" onChange={(e) => {
                             const country = {capital: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -42,7 +43,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>   
                     <div>
-                    CAS Number: <input onChange={(e) => {
+                    <input placeholder="CAS Number" onChange={(e) => {
                             const country = {leader: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -50,7 +51,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                    Product ID: <input onChange={(e) => {
+                    <input placeholder="Product ID" onChange={(e) => {
                             const country = {population: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -58,7 +59,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                    Price: <input onChange={(e) => {
+                    <input placeholder="Price" onChange={(e) => {
                             const country = {currency: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
