@@ -20,7 +20,8 @@ export function create(request, response) {
         capital: request.body.capital,
         leader: request.body.leader,
         population: request.body.population,
-        currency: request.body.currency
+        currency: request.body.currency,
+        image: request.body.image
     });
     country.save()
     .then(countries => {

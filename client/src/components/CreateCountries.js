@@ -11,6 +11,7 @@ class CreateCountries extends React.Component {
                 leader: "",
                 population: "",
                 currency: "",
+                image: "",
             }
         }
     }
@@ -66,6 +67,15 @@ class CreateCountries extends React.Component {
                             });
                         }} />
                     </div>
+                    <div>
+                    <input placeholder="Image" onChange={(e) => {
+                            const country = {image: e.target.value};
+                            this.setState({
+                                country: Object.assign(this.state.country,country)
+                            });
+                        }} />
+                    </div>
+                    
                     <button>Add</button>
                     </form>
                 </div>

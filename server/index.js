@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import countryRoutes from "./Routes/CountryRoutes";
+import profileRoutes from "./Routes/ProfileRoutes";
 
 const app = express();
 
@@ -27,3 +28,4 @@ app.get('/', (req, res, next) => {
 });
 
 app.use(countryRoutes);
+app.use(profileRoutes);

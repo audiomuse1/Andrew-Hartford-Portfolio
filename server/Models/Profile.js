@@ -1,30 +1,30 @@
 import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
-    continent: {
+    name: {
         required: true,
         type: String
     },
-    capital: {
+    location: {
         required: true,
         type: String
     },
-    leader: {
+    email: {
         required: true,
         type: String
     },
-    population: {
+    linkedin: {
         required: true,
         type: String
     },
-    currency: {
+    birthday: {
         required: true,
         type: String
     },
-    image: {
+    bio: {
         required: true,
         type: String
     },
 });
 
-export default mongoose.model("Country", schema);
+export default mongoose.model("Profile", schema);

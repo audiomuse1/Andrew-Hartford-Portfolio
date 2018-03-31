@@ -15,7 +15,24 @@ function country(state = [], action) {
   return state;
 }
 
+
+
+function profiles(state = [], action) { 
+  if (action.type === "PROFILES_LOADED") {
+    return action.value;
+  }
+  return state;
+}
+
+function profile(state = [], action) {
+  if (action.type === "GET_PROFILE_DONE") {
+    return action.value;
+  }
+  return state;
+}
+
 const rootReducer = combineReducers({
-  countries, country
+  profiles, profile, countries, country
 });
+
 export default rootReducer;

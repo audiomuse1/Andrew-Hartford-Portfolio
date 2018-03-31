@@ -66,67 +66,71 @@ export function loadCountries() {
 
 
 
-// export function loadCars() {
-//   return function (dispatch) {
-//     fetch("/cars")
-//         .then((response) => {
-//           return response.json();
-//         }).then((cars) => {
-//           dispatch(carsLoaded(cars));
-//         });
-//   };
-// }
 
-// function carsLoaded(cars) {
-//   return {
-//     type: "CARS_LOADED",
-//     value: cars
-//   };
-// }
 
-// export function addCar(c) {
-//     return function (dispatch) {
-//         fetch("/cars", {
-//             method: "POST",
-//             headers: {"Content-Type": "application/json"},
-//             body: JSON.stringify(c)
-//         }).then(() => dispatch(loadCars()));
-//     };
-// }
+  
 
-// export function getCar(id) {
-//     return function (dispatch) {
-//         fetch("/cars/" + id)
-//         .then((response) => {
-//             return response.json();
-//         }).then((car) => {
-//             dispatch(getCarDone(car));
-//         });
-//     };
-// }
+export function loadProfiles() {
+  return function (dispatch) {
+    fetch("/profiles")
+        .then((response) => {
+          return response.json();
+        }).then((profiles) => {
+          dispatch(profilesLoaded(profiles));
+        });
+  };
+}
 
-// function getCarDone(car) {
-//     return {
-//         type: "GET_CAR_DONE",
-//         value: car
-//     };
-// }
+function profilesLoaded(profiles) {
+  return {
+    type: "PROFILES_LOADED",
+    value: profiles
+  };
+}
 
-// export function deleteCar(id) {
-//     return function (dispatch) {
-//         fetch("/cars/" + id, {
-//             method: "DELETE",
-//             headers: {"Content-Type": "application/json"}
-//         }).then(() => {
-//             dispatch(carDeleted());
-//             dispatch(loadCars());
-//         });
-//     };
-// }
+export function addProfile(c) {
+    return function (dispatch) {
+        fetch("/profiles", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(c)
+        }).then(() => dispatch(loadProfiles()));
+    };
+}
 
-// function carDeleted(car) {
-//     return {
-//         type: "CAR_DELETED",
-//         value: car
-//     }
-// }
+export function getProfile(id) {
+    return function (dispatch) {
+        fetch("/profiles/" + id)
+        .then((response) => {
+            return response.json();
+        }).then((profile) => {
+            dispatch(getProfileDone(profile));
+        });
+    };
+}
+
+function getProfileDone(profile) {
+    return {
+        type: "GET_PROFILE_DONE",
+        value: profile
+    };
+}
+
+export function deleteProfile(id) {
+    return function (dispatch) {
+        fetch("/profiles/" + id, {
+            method: "DELETE",
+            headers: {"Content-Type": "application/json"}
+        }).then(() => {
+            dispatch(profileDeleted());
+            dispatch(loadProfiles());
+        });
+    };
+}
+
+function profileDeleted(profile) {
+    return {
+        type: "PROFILE_DELETED",
+        value: profile
+    }
+}

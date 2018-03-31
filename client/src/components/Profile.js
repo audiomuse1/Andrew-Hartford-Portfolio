@@ -3,12 +3,12 @@ import './Country.css';
 
 
 
-class Country extends Component {
+class Profile extends Component {
 
     componentDidMount() {
 
          
-        this.props.getCountry(this.props.match.params.id);
+        this.props.getProfile(this.props.match.params.id);
     }
     render() {
 
@@ -25,23 +25,23 @@ class Country extends Component {
                 <thead>
                     <tr>
                     <th className="mat" scope="col">#</th>
-                    <th className="mat" scope="col">Chemical Name</th>
-                    <th className="mat" scope="col">Chemical Formula</th>
-                    <th className="mat" scope="col">CAS Number</th>
-                    <th className="mat" scope="col">Product ID</th>
-                    <th className="mat" scope="col">Price</th>
-                    <th className="mat" scope="col">Image</th>
+                    <th className="mat" scope="col">Name</th>
+                    <th className="mat" scope="col">Location</th>
+                    <th className="mat" scope="col">Email</th>
+                    <th className="mat" scope="col">LinkedIn</th>
+                    <th className="mat" scope="col">Birthday</th>
+                    <th className="mat" scope="col">Bio</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                     <th className="mat" scope="row">1</th>
-                    <td className="mat">{this.props.country.continent}</td>
-                    <td className="mat">{this.props.country.capital}</td>
-                    <td className="mat">{this.props.country.leader}</td>
-                    <td className="mat">{this.props.country.population}</td>
-                    <td className="mat">{this.props.country.currency}</td>
-                    <td className="mat">{this.props.country.image}</td>
+                    <td className="mat">{this.props.profile.name}</td>
+                    <td className="mat">{this.props.profile.location}</td>
+                    <td className="mat">{this.props.profile.email}</td>
+                    <td className="mat">{this.props.profile.linkedin}</td>
+                    <td className="mat">{this.props.profile.birthday}</td>
+                    <td className="mat">{this.props.profile.bio}</td>
                     </tr>
                 </tbody>
                 </table>
@@ -53,4 +53,4 @@ class Country extends Component {
     }
 }
 
-export default Country;
+export default Profile;
