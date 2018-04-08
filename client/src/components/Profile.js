@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Country.css';
+import './Profile.css';
 
 
 
@@ -24,24 +24,24 @@ class Profile extends Component {
                 <table class="table">
                 <thead>
                     <tr>
-                    <th className="mat" scope="col">#</th>
-                    <th className="mat" scope="col">Name</th>
-                    <th className="mat" scope="col">Location</th>
-                    <th className="mat" scope="col">Email</th>
-                    <th className="mat" scope="col">LinkedIn</th>
-                    <th className="mat" scope="col">Birthday</th>
-                    <th className="mat" scope="col">Bio</th>
+                    <th className="mata" scope="col">#</th>
+                    <th className="mata" scope="col">Name</th>
+                    <th className="mata" scope="col">Location</th>
+                    <th className="mata" scope="col">Email</th>
+                    <th className="mata" scope="col">LinkedIn</th>
+                    <th className="mata" scope="col">Birthday</th>
+                    <th className="mata" scope="col">Bio</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <th className="mat" scope="row">1</th>
-                    <td className="mat">{this.props.profile.name}</td>
-                    <td className="mat">{this.props.profile.location}</td>
-                    <td className="mat">{this.props.profile.email}</td>
-                    <td className="mat">{this.props.profile.linkedin}</td>
-                    <td className="mat">{this.props.profile.birthday}</td>
-                    <td className="mat">{this.props.profile.bio}</td>
+                    <th className="mata" scope="row">1</th>
+                    <td className="mata">{this.props.profile.name}</td>
+                    <td className="mata">{this.props.profile.location}</td>
+                    <td className="mata">{this.props.profile.email}</td>
+                    <td className="mata">{this.props.profile.linkedin}</td>
+                    <td className="mata">{this.props.profile.birthday}</td>
+                    <td className="mata">{this.props.profile.bio}</td>
                     </tr>
                 </tbody>
                 </table>

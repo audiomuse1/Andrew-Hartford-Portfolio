@@ -1,0 +1,18 @@
+.table-responsive {
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+  }
+
+.table th {
+    width: auto !important;
+}
+
+.mata {
+    color: orange;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding-right: 80px;
+}
