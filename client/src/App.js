@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Main from "./components/Main";
+import NewMain from "./components/NewMain";
 import MainProfile from "./components/MainProfile";
 import ProfileContainer from "./containers/ProfileContainer";
 import CountryContainer from "./containers/CountryContainer";
@@ -27,6 +28,7 @@ class App extends Component {
             <nav>
               <ul>
                 <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/Main"}>Main</Link></li>
                 <li><Link to={"/addCountry"}>Add Chemical</Link></li>
                 <li><Link to={"/countries"}>List of Chemicals</Link></li>
                 <li><Link to={"/profile"}>Profile</Link></li>
@@ -38,7 +40,8 @@ class App extends Component {
               <Route path="/addCountry" component={CreateCountriesContainer} />
               <Route path="/profile" component={MainProfile} />
               <Route path="/profiles/:id" component={ProfileContainer} />
-              <Route path="/" component={Main} />
+              <Route path="/Main" component={Main} />
+              <Route path="/" component={NewMain} />
             </Switch>
           </div>
         </BrowserRouter>

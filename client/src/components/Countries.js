@@ -9,7 +9,7 @@ function Countries (props) {
             <div key={i}>
                 <div id="country">{country.continent}</div>
                 <button onClick={() => 
-                props.deleteCountry(country._id)}>Delet\</button>
+                props.deleteCountry(country._id)}>Delete</button>
                 <Link to={"/countries/" + country._id}>View Details</Link>
 
             </div>);
