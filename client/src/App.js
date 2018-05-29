@@ -26,14 +26,15 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <nav>
-              <ul>
+              
                 <li><Link to={"/"}>Home</Link></li>
                 <li><Link to={"/Main"}>Main</Link></li>
                 <li><Link to={"/addCountry"}>Add Chemical</Link></li>
                 <li><Link to={"/countries"}>List of Chemicals</Link></li>
                 <li><Link to={"/profile"}>Profile</Link></li>
-              </ul>
+            ''
             </nav>
+
             <Switch>
              <Route path="/countries/:id" component={CountryContainer} />
               <Route path="/countries" component={CountriesContainer} />
