@@ -25,7 +25,7 @@ class App extends Component {
 
         <BrowserRouter>
           <div>
-            <nav>
+            {/* <nav>
               
                 <li><Link to={"/"}>Home</Link></li>
                 <li><Link to={"/Main"}>Main</Link></li>
@@ -33,7 +33,7 @@ class App extends Component {
                 <li><Link to={"/countries"}>List of Chemicals</Link></li>
                 <li><Link to={"/profile"}>Profile</Link></li>
           
-            </nav>
+            </nav> */}
 
             <Switch>
              <Route path="/countries/:id" component={CountryContainer} />
