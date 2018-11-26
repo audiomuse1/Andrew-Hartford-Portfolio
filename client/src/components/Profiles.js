@@ -9,7 +9,7 @@ function Profiles (props) {
             <div key={i}>
                 <div id="profile">{profile.name}</div>
                 <button onClick={() => 
-                props.deleteProfile(profile._id)}>Delete</button>
+                props.deleteProfile(profile._id)}>Delete It</button>
                 <Link to={"/profiles/" + profile._id}>View Details</Link>
 
             </div>);
