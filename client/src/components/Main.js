@@ -6,11 +6,10 @@ import './Main.css';
 function Main() {
     return (
         <div>
-<<<<<<< HEAD
+
             <h1 id="welcome">Bumperactive</h1>
-=======
+
             <h1 id="welcome">Bumperactive.com</h1>
->>>>>>> 27170577a1620e5c045cb4af379714d084583ba1
 
 
 
