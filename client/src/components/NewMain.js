@@ -4,7 +4,6 @@ import './Main.css';
 
 function NewMain() {
 
-g
             
             <h1 className="inset-text text-focus-in">Bumperactive.com</h1>
             
