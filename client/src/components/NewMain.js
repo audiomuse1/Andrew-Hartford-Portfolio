@@ -15,8 +15,6 @@ function NewMain() {
 
         </div>
 
-
-    );
 }
 
 export default NewMain;
