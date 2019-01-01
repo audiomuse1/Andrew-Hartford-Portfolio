@@ -6,7 +6,10 @@ import './Main.css';
 function Main() {
     return (
         <div>
-            <h1 id="welcome">Andrew Hartford</h1>
+
+            <h1 id="welcome">Bumperactive</h1>
+
+            <h1 id="welcome">Bumperactive.com</h1>
 
 
 

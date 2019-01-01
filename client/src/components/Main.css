@@ -11,26 +11,38 @@ p1 {
     font-weight: bold;
 }
 
+.hello {
+        font-size: 20px;
+}
+
+.yee {
+        margin: auto;
+        height: 40px;
+        width: 770px;
+        background-color:red;
+        border: 1px solid white;
+}
+
+.yo {
+        margin: auto;
+        height: 113px;
+        width: 770px;
+        background-color: orange;
+        /* border: 1px solid red; */
+}
 
 body {
     /* This has to be same as the text-shadows below */
     background: #def;
 }
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 6em;
     line-height: 1em;
+    text-align: center;
 }
-.inset-text {
-    /* Shadows are visible under slightly transparent text color */
-    color: rgba(10,60,150, 0.8);
-    text-shadow: 1px 4px 6px #def, 0 0 0 rgb(71, 6, 6), 1px 4px 6px #def;
-}
-/* Don't show shadows when selecting text */
-::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
-::selection { background: #5af; color: #fff; text-shadow: none; }
-
 
 
 
@@ -133,7 +145,8 @@ h1 {
 
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                font-style: italic;
 }
 
 /* ----------------------------------------------
