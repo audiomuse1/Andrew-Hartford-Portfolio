@@ -16,6 +16,7 @@ function Profiles (props) {
         });
         return (
             <div>
+                
                 {profileDivs}
             </div>
     );
@@ -26,3 +27,6 @@ Profiles.propTypes = {
 };
 
 export default Profiles;
+
+
+

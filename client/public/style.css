@@ -1,10 +1,10 @@
 h1 {
-    font-size: 14;
+    font-size: 14px;
     color: red;
 }
 
 .jumbotron {
-    background-image: url("https://imgnooz.com/sites/default/files/wallpaper/nature/60977/blue-heaven-sea-wallpapers-60977-864422.jpg");
+    background-image: url("https://www.pablopicasso.org/images/paintings/guernica3.jpg");
     background-size: cover;
 }
 
@@ -389,6 +389,8 @@ h1 {
 
 
 .accordion.accordion-3 {
+  background-color: white;
+  margin-top: -31px;
   border-radius: 3px; }
   .accordion.accordion-3 p {
     font-size: 1rem; }
