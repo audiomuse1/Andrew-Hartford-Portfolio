@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import Main from "./components/Main";
 import NewMain from "./components/NewMain";
 import MainProfile from "./components/MainProfile";
 import ProfileContainer from "./containers/ProfileContainer";
@@ -41,7 +40,6 @@ class App extends Component {
               <Route path="/addC" component={CreateCountriesContainer} />
               <Route path="/profile" component={MainProfile} />
               <Route path="/profiles/:id" component={ProfileContainer} />
-              <Route path="/Main" component={Main} />
               <Route path="/" component={NewMain} />
             </Switch>
           </div>
